@@ -1,4 +1,6 @@
-﻿using System;
+﻿using COMP123_S2019_Assignment5.Models;
+using COMP123_S2019_Assignment5.Views;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -6,10 +8,19 @@ using System.Windows.Forms;
 
 namespace COMP123_S2019_Assignment5
 {
-    static class Program
+    public static class Program
     {
-        //creating a dictionary(a kind of list)
-        public static Dictionary<FormNames, Form> Forms;
+        //static members declared
+        public static Product product;
+        public static SelectForm selectForm;
+        public static SplashScreen splashScreen;
+        public static StartForm startForm;
+        public static ProductInfoForm productInfoForm;
+        public static OrderForm orderForm;
+        public static AboutForm aboutForm;
+        public static Hardware hardware;
+
+        
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -20,14 +31,17 @@ namespace COMP123_S2019_Assignment5
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            //creating an instance of the forms dictionary
-            Forms = new Dictionary<FormNames, Form>();
-            Forms.Add(FormNames.SPLASH_SCREEN, new SplashScreen());
-            Forms.Add(FormNames.START_FORM, new StartForm());
-            Forms.Add(FormNames.SELECT_FORM, new SelectForm());
-            Forms.Add(FormNames.PRODUCTINFO_FORM, new ProductInfoForm());
-            Forms.Add(FormNames.ORDER_FORM, new OrderForm());
-            Application.Run(new SplashScreen());
+            //instanciated
+            product = new Product();
+            selectForm = new SelectForm();
+            splashScreen = new SplashScreen();
+            startForm = new StartForm();
+            productInfoForm = new ProductInfoForm();
+            orderForm = new OrderForm();
+            aboutForm = new AboutForm();
+            hardware = new Hardware();
+
+            Application.Run(startForm);
         }
     }
 }

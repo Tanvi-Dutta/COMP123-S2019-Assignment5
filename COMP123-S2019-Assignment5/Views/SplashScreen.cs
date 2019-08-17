@@ -1,4 +1,5 @@
-﻿using System;
+﻿using COMP123_S2019_Assignment5.Views;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace COMP123_S2019_Assignment5
+namespace COMP123_S2019_Assignment5.Views
 {
     public partial class SplashScreen : Form
     {
@@ -36,7 +37,7 @@ namespace COMP123_S2019_Assignment5
         private void SplashScreenTimer_Tick(object sender, EventArgs e)
         {
             SplashScreenTimer.Enabled = false;
-            Program.Forms[FormNames.START_FORM].Show();
+            Program.startForm.Show();
             this.Hide();
         }
 

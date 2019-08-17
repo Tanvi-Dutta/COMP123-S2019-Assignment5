@@ -1,4 +1,5 @@
-﻿using System;
+﻿using COMP123_S2019_Assignment5.Views;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace COMP123_S2019_Assignment5
+namespace COMP123_S2019_Assignment5.Views
 {
     public partial class StartForm : Form
     {
@@ -25,7 +26,7 @@ namespace COMP123_S2019_Assignment5
         /// <param name="e"></param>
         private void NewOrder_Click(object sender, EventArgs e)
         {
-            Program.Forms[FormNames.SELECT_FORM].Show();
+            Program.selectForm.Show();
             this.Hide();
         }
 
@@ -37,7 +38,7 @@ namespace COMP123_S2019_Assignment5
         /// <param name="e"></param>
         private void SavedOrder_Click(object sender, EventArgs e)
         {
-            Program.Forms[FormNames.PRODUCTINFO_FORM].Show();
+            Program.productInfoForm.Show();
             this.Hide();
         }
 

@@ -1,4 +1,4 @@
-﻿namespace COMP123_S2019_Assignment5
+﻿namespace COMP123_S2019_Assignment5.Views
 {
     partial class StartForm
     {

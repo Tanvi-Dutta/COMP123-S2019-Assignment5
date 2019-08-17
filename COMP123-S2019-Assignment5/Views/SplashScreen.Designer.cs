@@ -1,4 +1,4 @@
-﻿namespace COMP123_S2019_Assignment5
+﻿namespace COMP123_S2019_Assignment5.Views
 {
     partial class SplashScreen
     {
@@ -56,7 +56,7 @@
             this.ClientSize = new System.Drawing.Size(494, 470);
             this.Controls.Add(this.pictureBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
