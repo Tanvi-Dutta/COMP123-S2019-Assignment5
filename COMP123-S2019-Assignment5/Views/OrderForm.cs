@@ -9,7 +9,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+/**
+ * Authors Name: Tanvi
+ * StudentID: 301044096
+ * App Creation Date: 16/8/2019
+ * 
+ * **/
 namespace COMP123_S2019_Assignment5.Views
 {
     public partial class OrderForm : Form
@@ -70,15 +75,7 @@ namespace COMP123_S2019_Assignment5.Views
             this.Hide();
         }
 
-        private void textBox10_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox12_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void OrderForm_Activated(object sender, EventArgs e)
         {

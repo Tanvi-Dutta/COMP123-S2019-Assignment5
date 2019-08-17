@@ -5,7 +5,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+/**
+ * Authors Name: Tanvi
+ * StudentID: 301044096
+ * App Creation Date: 16/8/2019
+ * 
+ * **/
 namespace COMP123_S2019_Assignment5
 {
     public static class Program
@@ -41,7 +46,7 @@ namespace COMP123_S2019_Assignment5
             aboutForm = new AboutForm();
             hardware = new Hardware();
 
-            Application.Run(startForm);
+            Application.Run(splashScreen);
         }
     }
 }
